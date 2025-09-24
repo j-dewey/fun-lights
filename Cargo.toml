@@ -1,0 +1,13 @@
+[package]
+name = "fun-lights"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+render = { path = "/Users/jareddewey/Documents/FrostyEngine/crates/render" }
+basic_3d = { path = "/Users/jareddewey/Documents/FrostyEngine/crates/basic_3d" }
+engine_core = { path = "/Users/jareddewey/Documents/FrostyEngine/crates/engine_core" }
+frosty_alloc = { path = "/Users/jareddewey/Documents/FrostyEngine/crates/frosty_alloc" }
+
+cgmath = "*"
+tobj = "*"
