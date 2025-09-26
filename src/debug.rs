@@ -40,12 +40,11 @@ impl System for MeshDisplayer {
     fn update(&self, mut objs: engine_core::query::Query<Self::Interop>) -> UpdateResult {
         println!("\nNew frame!");
         while let Some(mesh) = objs.next(MASTER_THREAD) {
-            /*for v in &mesh.as_ref().verts {
+            for v in &mesh.as_ref().verts {
                 println!("v at {:?}", v.world_pos);
-            }*/
+            }
             println!("{:?}", mesh.as_ref().verts.as_ptr());
         }
-        panic!();
         UpdateResult::Skip
     }
 }

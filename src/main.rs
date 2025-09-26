@@ -1,8 +1,9 @@
 #![feature(iter_array_chunks)]
-use engine_core::App;
+use engine_core::{App, input};
 use render::winit::{event_loop::EventLoop, window::WindowBuilder};
 
-mod debug;
+//mod debug;
+mod def_render;
 mod renderable;
 mod table_scene;
 mod visual;
